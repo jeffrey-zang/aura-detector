@@ -11,7 +11,8 @@ const _predictTensor = (state, model, tfResizedImage) => {
   if (state.isModelSet) {
     let predict = Array.from(model.predict(tfResizedImage).dataSync());
     tfResizedImage.dispose();
-    return magnifyResults(EMOTIONS)(predict);
+    console.log(predict[4])
+    return (predict[4] > 0.5) ? "DAS AURA" : "NO AURA";
   } else {
     return NO_MODEL;
   }

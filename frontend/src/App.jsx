@@ -16,7 +16,7 @@ function App() {
 
   return (
     <EmotionProvider>
-      <div className="navbar">
+      {/* <div className="navbar">
         <TabNav.Root className="nav-left">
           <TabNav.Link active>
             <a href="/">
@@ -32,12 +32,12 @@ function App() {
             <Link to="/playlists">Playlists</Link>
           </TabNav.Link>
         </TabNav.Root>
-      </div>
+      </div> */}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/analyze" element={<Analyze />} />
-        <Route path="/playlists" element={<Playlists />} />
-        <Route path="/settings" element={<Settings />} />
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<Analyze />} />
+        {/* <Route path="/playlists" element={<Playlists />} />
+        <Route path="/settings" element={<Settings />} /> */}
       </Routes>
     </EmotionProvider>
   );
