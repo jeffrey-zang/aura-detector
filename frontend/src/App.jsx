@@ -1,15 +1,15 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home/Home.jsx";
+// import Home from "./pages/Home/Home.jsx";
 import Analyze from "./pages/Analyze/Analyze.jsx";
-import Playlists from "./pages/Playlists/Playlists.jsx";
-import Settings from "./pages/Settings/Settings.jsx";
-import { TabNav } from "@radix-ui/themes";
-import { Link } from "react-router-dom";
+// import Playlists from "./pages/Playlists/Playlists.jsx";
+// import Settings from "./pages/Settings/Settings.jsx";
+// import { TabNav } from "@radix-ui/themes";
+// import { Link } from "react-router-dom";
 import "./index.css"; // Import the CSS file
-import Logo from "./MoodifyLogo.png";
-import { createContext } from "react";
-import { useState } from "react";
+// import Logo from "./MoodifyLogo.png";
+// import { createContext } from "react";
+// import { useState } from "react";
 import { EmotionProvider } from "./contexts/EmotionContext.jsx";
 
 function App() {
