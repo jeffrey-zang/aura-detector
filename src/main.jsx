@@ -3,10 +3,10 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./stylesheet/index.css";
 import { Theme } from "@radix-ui/themes";
-import { BrowserRouter } from "react-router-dom";
+// import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  // <BrowserRouter>
     <React.StrictMode>
       <Theme
         accentColor="green"
@@ -18,5 +18,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <App />
       </Theme>
     </React.StrictMode>
-  </BrowserRouter>
+  // </BrowserRouter>
 );
