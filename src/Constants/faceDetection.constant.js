@@ -10,7 +10,9 @@ const FACE_DETECTION_PROPS = {
     model: "short",
   },
   faceDetection: new FaceDetection.FaceDetection({
-    locateFile: (file) => {return "https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/" + file},
+    locateFile: (path) => {
+      return `/node_modules/@mediapipe/face_detection/${path}`;
+    }
   }),
   camera: ({ mediaSrc, onFrame, width, height }) =>
     new Camera(mediaSrc, {
