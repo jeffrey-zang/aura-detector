@@ -2,15 +2,15 @@ import FaceDetection from "@mediapipe/face_detection";
 import { Camera } from "@mediapipe/camera_utils";
 // import { URL_JS_DELIVR } from "./url.constant";
 
-const locateFaceDetectionFile = (file) =>
-  `https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/${file}`;
+// const locateFaceDetectionFile = (file) =>
+//   `https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/${file}`;
 
 const FACE_DETECTION_PROPS = {
   faceDetectionOptions: {
     model: "short",
   },
   faceDetection: new FaceDetection.FaceDetection({
-    locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/${file}`,
+    locateFile: (file) => {return "https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/" + file},
   }),
   camera: ({ mediaSrc, onFrame, width, height }) =>
     new Camera(mediaSrc, {
