@@ -1,4 +1,4 @@
-import FaceDetection from "@mediapipe/face_detection";
+import { FaceDetection } from "@mediapipe/face_detection";
 import { Camera } from "@mediapipe/camera_utils";
 // import { URL_JS_DELIVR } from "./url.constant";
 
@@ -9,7 +9,7 @@ const FACE_DETECTION_PROPS = {
   faceDetectionOptions: {
     model: "short",
   },
-  faceDetection: new FaceDetection.FaceDetection({
+  faceDetection: new FaceDetection({
     locateFile: (path) => {
       return `/node_modules/@mediapipe/face_detection/${path}`;
     }

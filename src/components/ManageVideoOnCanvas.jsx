@@ -2,7 +2,7 @@ import { useFaceDetection } from "react-use-face-detection";
 import React, { useEffect, useRef, useState } from "react";
 import * as tf from "@tensorflow/tfjs";
 import "../stylesheet/WebcamModified.css";
-import { URL_EMOTION_RECOGNITION_MODEL } from "../Constants/url.constant";
+// import { URL_EMOTION_RECOGNITION_MODEL } from "../Constants/url.constant";
 import drawOnCanvas from "../Common/canvas";
 import VideoOnCanvas from "./VideoOnCanvas";
 import SwitchCamera from "./SwitchCamera";
