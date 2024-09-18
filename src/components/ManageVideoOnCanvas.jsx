@@ -44,7 +44,7 @@ const ManageVideoOnCanvas = () => {
     if (!state.isModelSet) {
       // MODEL EMOTION RECOGNITION
       tf.ready().then(() =>
-        loadModel(URL_EMOTION_RECOGNITION_MODEL, setState, state)
+        loadModel("https://raw.githubusercontent.com/clementreiffers/emotion-recognition-website/main/resnet50js_ferplus/model.json", setState, state)
       );
     }
   }, [state, setState]);
