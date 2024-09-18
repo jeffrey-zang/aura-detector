@@ -9,5 +9,8 @@
         }
       ]
     }
-  ]
+  ],
+  "env": {
+    "VERCEL_ENV": "development"
+  }
 }

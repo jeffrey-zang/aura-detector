@@ -11,7 +11,11 @@ const FACE_DETECTION_PROPS = {
   },
   faceDetection: new FaceDetection({
     locateFile: (path) => {
-      return `/node_modules/@mediapipe/face_detection/${path}`;
+      if (typeof WebAssembly === "undefined") {
+        console.error("WebAssembly is not supported in this environment");
+      }
+      
+      return `https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/${path}`;
     }
   }),
   camera: ({ mediaSrc, onFrame, width, height }) =>
