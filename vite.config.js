@@ -9,7 +9,13 @@ export default defineConfig({
       external: [
         /^node:.*/,
       ]
+    },
+    commonjsOptions: {
+      transformMixedEsModules: true, // Allows both ESM and CJS
     }
+  },
+  ssr: {
+    noExternal: ['@mediapipe/face_detection'], // Ensure it stays on the client-side
   }
 });
 
