@@ -1,4 +1,4 @@
-import { FaceDetection } from "@mediapipe/face_detection";
+import fd from "@mediapipe/face_detection";
 import { Camera } from "@mediapipe/camera_utils";
 import { Face } from "@mui/icons-material";
 // import { URL_JS_DELIVR } from "./url.constant";
@@ -6,13 +6,13 @@ import { Face } from "@mui/icons-material";
 // const locateFaceDetectionFile = (file) =>
 //   `https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/${file}`;
 
-console.log('fd', FaceDetection);
+console.log('fd', fd.FaceDetection, fd);
 
 const FACE_DETECTION_PROPS = {
   faceDetectionOptions: {
     model: "short",
   },
-  faceDetection: new FaceDetection({
+  faceDetection: new fd.FaceDetection({
     locateFile: (path) => {      
       if (typeof WebAssembly === "undefined") {
         console.error("WebAssembly is not supported in this environment");
