@@ -10,7 +10,7 @@ function App() {
 
   return (
     <EmotionProvider>
-      <Analyze />
+      {/* <Analyze /> */}
       <Analytics />
     </EmotionProvider>
   );
