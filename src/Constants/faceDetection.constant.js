@@ -15,7 +15,7 @@ const FACE_DETECTION_PROPS = {
         console.error("WebAssembly is not supported in this environment");
       }
       
-      return `https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/${path}`;
+      return `/${path}`;
     }
   }),
   camera: ({ mediaSrc, onFrame, width, height }) =>
