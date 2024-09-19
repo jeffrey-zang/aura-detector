@@ -3,8 +3,10 @@ import React from "react";
 import Analyze from "./pages/Analyze/Analyze.jsx";
 import { EmotionProvider } from "./contexts/EmotionContext.jsx";
 import { Analytics } from "@vercel/analytics/react"
+import fd from "@mediapipe/face_detection";
 
 function App() {
+  console.log('CHUINGI', fd)
 
   return (
     <EmotionProvider>

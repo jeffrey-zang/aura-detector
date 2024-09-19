@@ -6,7 +6,7 @@ import { Camera } from "@mediapipe/camera_utils";
 // const locateFaceDetectionFile = (file) =>
 //   `https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/${file}`;
 
-console.log('fd', fd.FaceDetection, fd, Camera);
+console.log('fd', fd);
 
 const FACE_DETECTION_PROPS = {
   faceDetectionOptions: {
