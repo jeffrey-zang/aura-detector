@@ -1,12 +1,12 @@
 import fd from "@mediapipe/face_detection";
 import { Camera } from "@mediapipe/camera_utils";
-import { Face } from "@mui/icons-material";
+// import { Face } from "@mui/icons-material";
 // import { URL_JS_DELIVR } from "./url.constant";
 
 // const locateFaceDetectionFile = (file) =>
 //   `https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/${file}`;
 
-console.log('fd', fd.FaceDetection, fd);
+console.log('fd', fd.FaceDetection, fd, Camera);
 
 const FACE_DETECTION_PROPS = {
   faceDetectionOptions: {
