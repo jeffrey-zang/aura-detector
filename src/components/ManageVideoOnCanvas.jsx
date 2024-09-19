@@ -6,7 +6,7 @@ import "../stylesheet/WebcamModified.css";
 import drawOnCanvas from "../Common/canvas";
 import VideoOnCanvas from "./VideoOnCanvas";
 import SwitchCamera from "./SwitchCamera";
-import { FACE_DETECTION_PROPS } from "../Constants/faceDetection.constant";
+import { FACE_DETECTION_PROPS } from "../Constants/faceDetection";
 import { loadModel } from "../Common/tensorflowModel";
 
 const _init_state = {
