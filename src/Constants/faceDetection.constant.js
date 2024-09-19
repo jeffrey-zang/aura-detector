@@ -6,14 +6,14 @@ import { Face } from "@mui/icons-material";
 // const locateFaceDetectionFile = (file) =>
 //   `https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/${file}`;
 
+console.log('fd', FaceDetection);
+
 const FACE_DETECTION_PROPS = {
   faceDetectionOptions: {
     model: "short",
   },
   faceDetection: new FaceDetection({
-    locateFile: (path) => {
-      
-      console.log('fd', FaceDetection);
+    locateFile: (path) => {      
       if (typeof WebAssembly === "undefined") {
         console.error("WebAssembly is not supported in this environment");
       }
