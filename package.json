@@ -7,7 +7,7 @@
     "start": "react-scripts start",
     "eject": "react-scripts eject",
     "dev": "vite --host",
-    "build": "vite build",
+    "build": "npm install @mediapipe/face_detection && vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "postinstall": "node scripts/prebuild.js"
