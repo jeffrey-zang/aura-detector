@@ -1,4 +1,4 @@
-import fd from "@mediapipe/face_detection";
+import fd, { VERSION } from "@mediapipe/face_detection";
 import { Camera } from "@mediapipe/camera_utils";
 // import { Face } from "@mui/icons-material";
 // import { URL_JS_DELIVR } from "./url.constant";
@@ -7,6 +7,7 @@ import { Camera } from "@mediapipe/camera_utils";
 //   `https://cdn.jsdelivr.net/npm/@mediapipe/face_detection/${file}`;
 
 console.log('fd', fd);
+console.log('version', VERSION);
 
 const FACE_DETECTION_PROPS = {
   faceDetectionOptions: {
